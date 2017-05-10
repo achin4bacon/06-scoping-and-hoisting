@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		/*
+			Exercise 1
+			The following code does not correctly run (see tests)
+			How should we fix this?
+		*/
+
+		function createCharacter(width, height, name) {
+			//change variable name 'char' to 'stuffs' so it does not match char = createCharacter(10, 12, "Homer");
+			//could also change char beneath to 'char1' but would need to edit tests
+			stuffs = "(" + width + "x" + height + ") " + name;
+			return stuffs;
+		}
+
+		char = createCharacter(10, 12, "Homer");
+		//d'oh!
+		char2 = createCharacter(12, 18, "Barney");
+		char3 = createCharacter(4, 17, "Marge");
+
+		// Tests -- do not edit
+		console.log(char); // Should log "(10x12) Homer"
+		console.log(char2); // Should log "(12x18) Barney"
+		console.log(char3); // Should log "(4x17) Marge"
+	</script>
+</body>
+
+</html>
